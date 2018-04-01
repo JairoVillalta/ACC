@@ -20,16 +20,16 @@ void display()
     //El parámetro es un modo de pila y aplica las operaciones de matriz subsiguientes a la pila de matriz de proyección.
 	glLoadIdentity();// Reemplaza la matriz actual con la matriz de identidad
 	glOrtho(-1, 1, -1, 1, -1, 1); // Vista completa del plano cartesiano.
-
+	
     //  Borrar pantalla y Z-buffer
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     
-    glViewport(0, 0, 500, 400); //Establecer la ventana gráfica
+    glViewport(0, 0, 400, 400); //Establecer la ventana gráfica
     //Parámetros (GLint x,  GLint y,  GLsizei width,  GLsizei height)
     // X,Y Especifica la esquina inferior izquierda del rectángulo de la vista, en píxeles.
     // Width, Height Especifica el ancho y la altura.
     
-    gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0); // Define una transformación de visualización.
+    gluLookAt(0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1); // Define una transformación de visualización.
     // Los parámetro (eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ)
     // Eye x, y, z Especifica la posición del punto del ojo.
     // Center x, y, z Especifica la posición del punto de referencia.
@@ -183,7 +183,7 @@ int main(int argc, char* argv[])
 
     // Solicitar ventana con color real y doble buffer con Z-buffer
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-    glutInitWindowSize (800, 600);
+    glutInitWindowSize (500, 500);
     glutInitWindowPosition (0, 0);
     // Crear ventana
     glutCreateWindow("Cubo controlado por teclas");
