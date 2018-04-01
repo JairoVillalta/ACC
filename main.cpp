@@ -16,26 +16,26 @@ GLfloat scale = 1.0f;
 void display()
 {
     
-    //  Borrar pantalla y Z-buffer
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-    
     glMatrixMode(GL_PROJECTION); // Especifica qué matriz es la matriz actual.
     //El parámetro es un modo de pila y aplica las operaciones de matriz subsiguientes a la pila de matriz de proyección.
 	glLoadIdentity();// Reemplaza la matriz actual con la matriz de identidad
-	glOrtho(-1, 1, -1, 1, -1, 1); // Vista completa del plano cartesiano.	  
+	glOrtho(-1, 1, -1, 1, -1, 1); // Vista completa del plano cartesiano.
+
+    //  Borrar pantalla y Z-buffer
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     
-    glViewport(0, 0, 400, 400); //Establecer la ventana gráfica
+    glViewport(0, 0, 500, 400); //Establecer la ventana gráfica
     //Parámetros (GLint x,  GLint y,  GLsizei width,  GLsizei height)
     // X,Y Especifica la esquina inferior izquierda del rectángulo de la vista, en píxeles.
     // Width, Height Especifica el ancho y la altura.
     
-    gluLookAt(0.1, 0.0, 0.0, 0.0, -0.1, -0.1, 0.0, 0.1, 0.0); // Define una transformación de visualización.
+    gluLookAt(0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0); // Define una transformación de visualización.
     // Los parámetro (eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ)
     // Eye x, y, z Especifica la posición del punto del ojo.
     // Center x, y, z Especifica la posición del punto de referencia.
     // Up x, y, z Especifica la dirección del vector ascendente.
 
-
+    
     // Rotar en el eje X,Y y Z
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
