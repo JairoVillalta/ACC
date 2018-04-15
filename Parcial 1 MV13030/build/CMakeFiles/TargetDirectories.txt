@@ -1,0 +1,3 @@
+/home/jairo/Parcial 1 MV13030/build/CMakeFiles/rebuild_cache.dir
+/home/jairo/Parcial 1 MV13030/build/CMakeFiles/edit_cache.dir
+/home/jairo/Parcial 1 MV13030/build/CMakeFiles/hello.dir
