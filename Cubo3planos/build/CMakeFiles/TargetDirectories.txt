@@ -1,0 +1,3 @@
+/home/jairo/Actividad 2/Cubo3planos/build/CMakeFiles/rebuild_cache.dir
+/home/jairo/Actividad 2/Cubo3planos/build/CMakeFiles/edit_cache.dir
+/home/jairo/Actividad 2/Cubo3planos/build/CMakeFiles/hello.dir

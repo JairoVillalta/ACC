@@ -1,0 +1,3 @@
+/home/jairo/Actividad 2/cubofrente/build/CMakeFiles/rebuild_cache.dir
+/home/jairo/Actividad 2/cubofrente/build/CMakeFiles/edit_cache.dir
+/home/jairo/Actividad 2/cubofrente/build/CMakeFiles/hello.dir

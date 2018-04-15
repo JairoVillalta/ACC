@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jairo/Actividad 2/Cubo3planos/main.cpp
+stdio.h
+-
+GL/gl.h
+-
+GL/glut.h
+-
+
