@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jairo/MenuFiguras_MV13030/figuras.cpp
+GL/gl.h
+-
+GL/glut.h
+-
+stdio.h
+-
+
